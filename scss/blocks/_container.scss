@@ -7,3 +7,106 @@
   margin-left: auto;
   margin-right: auto;
 }
+body{
+  background-color: #262626;
+}
+.input-group{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.music__item{
+  position: relative;
+}
+.music__img{
+  border-radius: 12px;
+  overflow: hidden;
+}
+audio {
+  filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+  max-width: 261px;
+  height: 25px;
+}
+.music__block{
+  position: absolute;
+  bottom: -7px;
+  z-index: 90;
+}
+.music__name{
+  white-space: nowrap; 
+  width: 242px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+}
+
+.music__names{
+  position: absolute;
+  bottom: -29px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 88%;
+}
+.music__link{
+  display: block;
+  text-decoration: none;
+}
+.music__item{
+  margin-bottom: 40px;
+  perspective: 700px;
+  
+}
+.music__artist{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #b81010bc;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -75px;
+  animation-name: rotet;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count:infinite;
+}
+@keyframes rotet{
+  from{
+    transform: rotate(0deg)
+  }
+  to{
+    transform: rotate(360deg)
+  }
+}
+.music__orign{
+  position: absolute;
+  transform: translate(-50% , -50%);
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #b81010ce;
+}
+.modal__all{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #00000080;
+  z-index: 100;
+  display: none;
+}
+.refresh{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.mod-block{
+  display: block;
+}
